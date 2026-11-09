@@ -1,2344 +1,1426 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-<title>
-Viktor | AI Engineer & Data Engineer
-</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-
-<style>
-
-/* =========================================================
-   PREMIUM PROJECT CONTENT
-   Keeps existing functionality while improving hierarchy,
-   spacing, readability and recruiter-focused presentation.
-   ========================================================= */
-
-.case {
-    margin-bottom: 40px;
-}
-
-.case > .grid {
-    gap: 24px;
-    margin-top: 24px;
-}
-
-.case > .box {
-    margin-top: 24px;
-}
-
-.grid > .box {
-    margin-bottom: 0;
-}
-
-.box {
-    padding: 24px;
-}
-
-.stack {
-    margin-top: 24px;
-}
-
-.diagram {
-    margin-top: 28px;
-    margin-bottom: 28px;
-}
-
-.tags {
-    margin-top: 14px;
-}
-
-.buttons {
-    margin-top: 28px;
-}
-
-.case .grid + .box {
-    margin-top: 28px;
-}
-
-.case .box + .box {
-    margin-top: 20px;
-}
-
-.grid {
-    gap: 24px;
-}
-
-.box h4 {
-    margin-bottom: 12px;
-}
-
-.box p {
-    line-height: 1.7;
-}
-
-.box code {
-    display: inline-block;
-    margin: 3px 0;
-    padding: 2px 6px;
-    border-radius: 5px;
-    font-size: 0.88em;
-    background: rgba(127,127,127,0.10);
-}
-
-.data-flow {
-    text-align: center;
-    line-height: 1.7;
-    padding: 28px 20px;
-}
-
-.data-flow .flow-stage {
-    margin: 8px 0;
-}
-
-.data-flow .flow-title {
-    font-weight: 700;
-    letter-spacing: 0.02em;
-}
-
-.data-flow .flow-meta {
-    font-size: 0.92rem;
-    opacity: 0.78;
-}
-
-.data-flow .arrow {
-    font-size: 1.3rem;
-    opacity: 0.65;
-    margin: 5px 0;
-}
-
-.metric-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 16px;
-    margin-top: 24px;
-}
-
-.metric-card {
-    padding: 20px;
-    border-radius: 12px;
-    background: rgba(127,127,127,0.08);
-}
-
-.metric-number {
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 1;
-    margin-bottom: 8px;
-}
-
-.metric-label {
-    font-size: 0.88rem;
-    opacity: 0.72;
-}
-
-.layer-card {
-    height: 100%;
-}
-
-.layer-number {
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    opacity: 0.6;
-    margin-bottom: 10px;
-}
-
-.layer-purpose {
-    margin-bottom: 14px;
-}
-
-.model-list {
-    margin-top: 14px;
-}
-
-.model-group-title {
-    font-size: 0.82rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    opacity: 0.62;
-    margin-top: 16px;
-    margin-bottom: 8px;
-}
-
-.architecture-note {
-    margin-top: 24px;
-    padding: 20px 22px;
-    border-left: 3px solid currentColor;
-    background: rgba(127,127,127,0.07);
-    border-radius: 0 10px 10px 0;
-}
-
-.highlight-box {
-    padding: 22px 24px;
-    margin-top: 24px;
-    border-radius: 12px;
-    background: rgba(127,127,127,0.08);
-}
-
-.highlight-box strong {
-    font-weight: 700;
-}
-
-.section-intro {
-    max-width: 860px;
-}
-
-.pipeline-step {
-    margin-bottom: 18px;
-}
-
-.pipeline-step:last-child {
-    margin-bottom: 0;
-}
-
-.pipeline-step strong {
-    display: block;
-    margin-bottom: 4px;
-}
-
-.project-link-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 28px;
-}
-
-.project-link-row .btn {
-    margin-top: 0;
-}
-
-@media (max-width: 900px) {
-
-    .metric-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-}
-
-@media (max-width: 768px) {
-
-    .case {
-        margin-bottom: 28px;
-    }
-
-    .box {
-        padding: 20px;
-    }
-
-    .case > .grid {
-        gap: 18px;
-        margin-top: 18px;
-    }
-
-    .case > .box {
-        margin-top: 18px;
-    }
-
-    .case .grid + .box {
-        margin-top: 20px;
-    }
-
-    .case .box + .box {
-        margin-top: 16px;
-    }
-
-    .diagram {
-        margin-top: 22px;
-        margin-bottom: 22px;
-    }
-
-    .buttons {
-        margin-top: 22px;
-    }
-
-    .metric-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 12px;
-    }
-
-    .metric-card {
-        padding: 16px;
-    }
-
-    .metric-number {
-        font-size: 1.45rem;
-    }
-
-}
-
-@media (max-width: 480px) {
-
-    .metric-grid {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1220">
+    <meta name="description" content="Viktor Sarafraz — Data Engineer portfolio focused on Python, SQL, Google Cloud, BigQuery, dbt, data pipelines and analytics engineering.">
+    <meta property="og:title" content="Viktor Sarafraz | Data Engineer">
+    <meta property="og:description" content="Data engineering, cloud data platforms and analytics-ready data pipelines.">
+    <meta property="og:type" content="website">
+    <title>Viktor Sarafraz | Data Engineer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #0b1220;
+            --bg-soft: #0f1929;
+            --panel: #111e30;
+            --panel-strong: #15243a;
+            --line: rgba(177, 198, 222, 0.13);
+            --text: #edf4fb;
+            --muted: #a4b3c6;
+            --subtle: #75869c;
+            --accent: #64dfc0;
+            --accent-strong: #36c5a4;
+            --accent-soft: rgba(100, 223, 192, 0.1);
+            --blue: #8bb8ff;
+            --max-width: 1120px;
+            --radius: 18px;
+            --shadow: 0 24px 70px rgba(0, 0, 0, 0.22);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 88px;
+        }
+
+        body {
+            margin: 0;
+            background:
+                radial-gradient(circle at 82% 4%, rgba(54, 197, 164, 0.09), transparent 27rem),
+                radial-gradient(circle at 5% 35%, rgba(82, 132, 210, 0.07), transparent 25rem),
+                var(--bg);
+            color: var(--text);
+            font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 4px;
+        }
+
+        .container {
+            width: min(var(--max-width), calc(100% - 48px));
+            margin: 0 auto;
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            border-bottom: 1px solid var(--line);
+            background: rgba(11, 18, 32, 0.86);
+            backdrop-filter: blur(18px);
+        }
+
+        .nav {
+            min-height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 28px;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+        }
+
+        .brand-mark {
+            width: 36px;
+            height: 36px;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(100, 223, 192, 0.4);
+            border-radius: 10px;
+            color: var(--accent);
+            background: var(--accent-soft);
+            font-family: "DM Mono", monospace;
+            font-size: 0.82rem;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            color: var(--muted);
+            font-size: 0.88rem;
+        }
+
+        .nav-links a {
+            transition: color 160ms ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .nav-links .nav-contact {
+            padding: 9px 15px;
+            border: 1px solid rgba(100, 223, 192, 0.38);
+            border-radius: 999px;
+            color: var(--accent);
+        }
+
+        /* HERO */
+
+        .hero {
+            padding: 112px 0 88px;
+        }
+
+        .hero-inner {
+            max-width: 850px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--accent);
+            font-family: "DM Mono", monospace;
+            font-size: 0.76rem;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 24px;
+            height: 1px;
+            background: var(--accent);
+        }
+
+        h1 {
+            max-width: 850px;
+            margin: 22px 0 20px;
+            font-size: clamp(2.7rem, 7vw, 5.15rem);
+            line-height: 1.04;
+            letter-spacing: -0.065em;
+            font-weight: 800;
+        }
+
+        h1 span {
+            color: var(--accent);
+        }
+
+        .hero-copy {
+            max-width: 690px;
+            margin: 0;
+            color: var(--muted);
+            font-size: clamp(1.04rem, 2vw, 1.2rem);
+            line-height: 1.8;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 13px;
+            margin-top: 34px;
+        }
+
+        .button {
+            display: inline-flex;
+            min-height: 47px;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 0 19px;
+            border: 1px solid var(--line);
+            border-radius: 9px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .button-primary {
+            border-color: var(--accent);
+            background: var(--accent);
+            color: #082019;
+        }
+
+        .button-primary:hover {
+            background: #83ecd1;
+        }
+
+        .button-secondary {
+            background: rgba(255,255,255,0.025);
+            color: var(--text);
+        }
+
+        .button-secondary:hover {
+            border-color: rgba(100,223,192,0.45);
+        }
+
+        .hero-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+            margin-top: 42px;
+        }
+
+        .chip {
+            padding: 6px 11px;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            color: #c1cede;
+            background: rgba(255,255,255,0.025);
+            font-family: "DM Mono", monospace;
+            font-size: 0.72rem;
+        }
+
+        /* GENERAL SECTIONS */
+
+        .section {
+            padding: 76px 0;
+            border-top: 1px solid var(--line);
+        }
+
+        .section-heading {
+            max-width: 720px;
+            margin-bottom: 34px;
+        }
+
+        .section-kicker {
+            margin: 0 0 10px;
+            color: var(--accent);
+            font-family: "DM Mono", monospace;
+            font-size: 0.74rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: clamp(1.85rem, 4vw, 2.65rem);
+            line-height: 1.15;
+            letter-spacing: -0.045em;
+        }
+
+        .section-intro {
+            margin: 14px 0 0;
+            color: var(--muted);
+        }
+
+        /* FEATURED PROJECT */
+
+        .featured-project {
+            overflow: hidden;
+            border: 1px solid rgba(100, 223, 192, 0.23);
+            border-radius: 22px;
+            background: linear-gradient(145deg, rgba(21, 36, 58, 0.98), rgba(15, 25, 41, 0.98));
+            box-shadow: var(--shadow);
+        }
+
+        .project-top {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 38px;
+            padding: 38px;
+        }
+
+        .project-label {
+            display: inline-flex;
+            padding: 5px 10px;
+            border: 1px solid rgba(100,223,192,0.3);
+            border-radius: 999px;
+            color: var(--accent);
+            background: var(--accent-soft);
+            font-family: "DM Mono", monospace;
+            font-size: 0.68rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .project-top h3 {
+            margin: 18px 0 13px;
+            font-size: clamp(1.55rem, 3vw, 2.2rem);
+            line-height: 1.2;
+            letter-spacing: -0.045em;
+        }
+
+        .project-description {
+            max-width: 620px;
+            margin: 0;
+            color: var(--muted);
+        }
+
+        .project-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .project-facts {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            align-content: center;
+        }
+
+        .fact {
+            min-height: 100px;
+            padding: 19px;
+            border: 1px solid var(--line);
+            border-radius: 13px;
+            background: rgba(7, 14, 25, 0.38);
+        }
+
+        .fact-number {
+            display: block;
+            color: var(--accent);
+            font-size: 1.9rem;
+            line-height: 1.1;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+        }
+
+        .fact-label {
+            display: block;
+            margin-top: 7px;
+            color: var(--muted);
+            font-size: 0.78rem;
+        }
+
+        .project-bottom {
+            padding: 26px 38px 32px;
+            border-top: 1px solid var(--line);
+            background: rgba(5, 12, 22, 0.24);
+        }
+
+        .project-bottom h4 {
+            margin: 0 0 17px;
+            color: #dce7f2;
+            font-size: 0.9rem;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .project-tags span {
+            padding: 6px 10px;
+            border-radius: 6px;
+            background: rgba(139,184,255,0.09);
+            color: #b8d0f6;
+            font-size: 0.74rem;
+        }
+
+        /* DATA PIPELINE */
+
+        .pipeline {
+            display: grid;
+            grid-template-columns: repeat(6, minmax(0, 1fr));
+            gap: 12px;
+            align-items: stretch;
+        }
+
+        .pipeline-step {
+            position: relative;
+            min-height: 142px;
+            padding: 18px 14px;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            background: var(--panel);
+        }
+
+        .pipeline-step:not(:last-child)::after {
+            content: "›";
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            right: -13px;
+            width: 14px;
+            transform: translateY(-50%);
+            color: var(--accent);
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .step-number {
+            color: var(--accent);
+            font-family: "DM Mono", monospace;
+            font-size: 0.68rem;
+        }
+
+        .pipeline-step h3 {
+            margin: 12px 0 7px;
+            font-size: 0.9rem;
+            line-height: 1.3;
+        }
+
+        .pipeline-step p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 0.74rem;
+            line-height: 1.55;
+        }
+
+        .orchestration-note {
+            margin: 18px 0 0;
+            padding: 15px 18px;
+            border-left: 2px solid var(--accent);
+            background: var(--accent-soft);
+            color: var(--muted);
+            font-size: 0.86rem;
+        }
+
+        .orchestration-note strong {
+            color: var(--text);
+        }
+
+        /* MODEL CARDS */
+
+        .model-grid,
+        .principle-grid,
+        .stack-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 15px;
+        }
+
+        .info-card {
+            height: 100%;
+            padding: 22px;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            background: var(--panel);
+        }
+
+        .card-index {
+            color: var(--accent);
+            font-family: "DM Mono", monospace;
+            font-size: 0.7rem;
+        }
+
+        .info-card h3 {
+            margin: 11px 0 8px;
+            font-size: 1rem;
+        }
+
+        .info-card p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 0.84rem;
+        }
+
+        .model-count {
+            margin: 15px 0 10px;
+            color: var(--accent);
+            font-size: 1.35rem;
+            font-weight: 800;
+        }
+
+        .model-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .model-list li {
+            padding: 5px 0;
+            border-top: 1px solid rgba(177,198,222,0.08);
+            color: #b9c7d8;
+            font-family: "DM Mono", monospace;
+            font-size: 0.68rem;
+            overflow-wrap: anywhere;
+        }
+
+        .grain-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 18px;
+        }
+
+        .grain-item {
+            padding: 16px;
+            border: 1px solid var(--line);
+            border-radius: 11px;
+            background: rgba(255,255,255,0.02);
+        }
+
+        .grain-item strong {
+            display: block;
+            color: #dce7f2;
+            font-family: "DM Mono", monospace;
+            font-size: 0.75rem;
+        }
+
+        .grain-item span {
+            display: block;
+            margin-top: 6px;
+            color: var(--muted);
+            font-size: 0.78rem;
+        }
+
+        /* TECHNOLOGY STACK */
+
+        .stack-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .stack-card h3 {
+            margin-top: 0;
+        }
+
+        .stack-card p {
+            line-height: 1.9;
+        }
+
+        .stack-card strong {
+            color: #dce7f2;
+            font-weight: 600;
+        }
+
+        /* ABOUT */
+
+        .about-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .about-card {
+            padding: 27px;
+            border: 1px solid var(--line);
+            border-radius: 15px;
+            background: var(--panel);
+        }
+
+        .about-card h3 {
+            margin: 0 0 10px;
+            font-size: 1.05rem;
+        }
+
+        .about-card p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        /* CONTACT */
+
+        .contact-panel {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 36px;
+            border: 1px solid rgba(100,223,192,0.25);
+            border-radius: 18px;
+            background: linear-gradient(120deg, rgba(100,223,192,0.09), rgba(21,36,58,0.75));
+        }
+
+        .contact-panel h2 {
+            font-size: clamp(1.7rem, 4vw, 2.3rem);
+        }
+
+        .contact-panel p {
+            margin: 10px 0 0;
+            color: var(--muted);
+        }
+
+        footer {
+            padding: 27px 0;
+            border-top: 1px solid var(--line);
+            color: var(--subtle);
+            font-size: 0.78rem;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .footer-inner a {
+            color: var(--muted);
+        }
+
+        .footer-inner a:hover {
+            color: var(--accent);
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 900px) {
+            .project-top {
+                grid-template-columns: 1fr;
+            }
+
+            .pipeline {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .pipeline-step:nth-child(3)::after {
+                display: none;
+            }
+
+            .model-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .grain-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 650px) {
+            .container {
+                width: min(100% - 32px, var(--max-width));
+            }
+
+            .nav {
+                min-height: 64px;
+            }
+
+            .nav-links {
+                gap: 14px;
+                font-size: 0.76rem;
+            }
+
+            .nav-links a:not(.nav-contact) {
+                display: none;
+            }
+
+            .hero {
+                padding: 82px 0 65px;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .project-top {
+                padding: 25px;
+                gap: 25px;
+            }
+
+            .project-bottom {
+                padding: 23px 25px 26px;
+            }
+
+            .pipeline {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .pipeline-step:nth-child(3)::after {
+                display: block;
+            }
+
+            .pipeline-step:nth-child(even)::after {
+                display: none;
+            }
+
+            .stack-grid,
+            .about-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-panel {
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 27px;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .model-grid,
+            .project-facts {
+                grid-template-columns: 1fr;
+            }
+
+            .grain-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pipeline {
+                grid-template-columns: 1fr;
+            }
+
+            .pipeline-step {
+                min-height: 0;
+            }
+
+            .pipeline-step::after,
+            .pipeline-step:nth-child(3)::after,
+            .pipeline-step:nth-child(even)::after {
+                display: none !important;
+            }
+
+            .hero-actions .button {
+                width: 100%;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- NAV -->
+    <!-- NAVIGATION -->
 
-<nav>
+    <header class="site-header">
+        <div class="container nav">
 
-<div class="nav-inner">
+            <a class="brand" href="#top" aria-label="Viktor Sarafraz — home">
+                <span class="brand-mark">VS</span>
+                <span>Viktor Sarafraz</span>
+            </a>
 
-<strong>
-Viktor Sarafraz
-</strong>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="#work">Projects</a>
+                <a href="#architecture">Architecture</a>
+                <a href="#stack">Tech stack</a>
+                <a href="#about">About</a>
+                <a class="nav-contact" href="#contact">Contact</a>
+            </nav>
 
-<span>
-AI Engineer • Data Engineer
-</span>
+        </div>
+    </header>
 
-</div>
 
-</nav>
+    <main id="top">
 
-<!-- HERO -->
+        <!-- HERO -->
 
-<section class="hero">
+        <section class="hero">
+            <div class="container">
 
-<div class="container">
+                <div class="hero-inner">
 
-<div class="badge">
+                    <div class="eyebrow">
+                        Data Engineering · Cloud Data Platforms
+                    </div>
 
-AI Systems • Data Engineering • Cloud Architecture
+                    <h1>
+                        Turning raw data into <span>reliable insight.</span>
+                    </h1>
 
-</div>
+                    <p class="hero-copy">
+                        I build data pipelines and analytics platforms that transform raw datasets
+                        into structured, tested and analytics-ready data. My focus is on Python,
+                        SQL, cloud data services, data modeling and workflow orchestration.
+                    </p>
 
-<h1>
+                    <div class="hero-actions">
 
-Building Production AI & Data Systems
+                        <a class="button button-primary" href="#work">
+                            Explore my work <span aria-hidden="true">↘</span>
+                        </a>
 
-</h1>
+                        <a class="button button-secondary"
+                           href="https://github.com/viktor-ai-dev"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            GitHub profile <span aria-hidden="true">↗</span>
+                        </a>
 
-<p>
+                    </div>
 
-I design and engineer intelligent applications,
-RAG systems, autonomous AI agents and scalable
-data pipelines for real-world business problems.
+                    <div class="hero-stack" aria-label="Core technologies">
+                        <span class="chip">Python</span>
+                        <span class="chip">SQL</span>
+                        <span class="chip">Google Cloud</span>
+                        <span class="chip">BigQuery</span>
+                        <span class="chip">dbt</span>
+                        <span class="chip">Kestra</span>
+                    </div>
 
-</p>
+                </div>
 
-<div class="buttons">
+            </div>
+        </section>
 
-<a class="btn primary"
-href="https://github.com/viktor-ai-dev">
 
-GitHub
+        <!-- FEATURED PROJECT -->
 
-</a>
+        <section class="section" id="work">
+            <div class="container">
 
-<a class="btn secondary"
-href="#projects">
+                <div class="section-heading">
+                    <p class="section-kicker">Featured work</p>
 
-Projects
+                    <h2>
+                        End-to-end data engineering
+                    </h2>
 
-</a>
+                    <p class="section-intro">
+                        A cloud data platform built to take e-commerce source data through
+                        ingestion, transformation, modeling and business-facing analytics.
+                    </p>
+                </div>
 
-</div>
 
-</div>
+                <article class="featured-project">
 
-</section>
+                    <div class="project-top">
 
-<!-- PROJECTS -->
+                        <div>
 
-<section class="section" id="projects">
+                            <span class="project-label">
+                                Flagship project
+                            </span>
 
-<div class="container">
+                            <h3>
+                                E-Commerce Customer Intelligence Platform
+                            </h3>
 
-<h2 class="section-title">
+                            <p class="project-description">
+                                An end-to-end data platform that converts raw e-commerce datasets into
+                                trusted analytical models. The pipeline uses Python and Parquet for
+                                ingestion, Google Cloud Storage for data storage, BigQuery as the
+                                warehouse, dbt for transformations and Kestra for workflow orchestration.
+                                A Streamlit dashboard consumes the reporting models.
+                            </p>
 
-Featured AI Engineering Systems
+                            <div class="project-links">
 
-</h2>
+                                <a class="button button-primary"
+                                   href="https://github.com/viktor-ai-dev/ecommerce-customer-intelligence-platform"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+                                    View repository <span aria-hidden="true">↗</span>
+                                </a>
 
-<p class="subtitle">
+                            </div>
 
-Production-focused AI applications combining
-LLMs, data processing, backend engineering and automation.
+                        </div>
 
-</p>
 
-<!-- STOREPULSE -->
+                        <div class="project-facts" aria-label="Project model counts">
 
-<div class="case">
+                            <div class="fact">
+                                <span class="fact-number">9</span>
+                                <span class="fact-label">Staging models</span>
+                            </div>
 
-<h3>
+                            <div class="fact">
+                                <span class="fact-number">5</span>
+                                <span class="fact-label">Dimension models</span>
+                            </div>
 
-StorePulse AI
+                            <div class="fact">
+                                <span class="fact-number">4</span>
+                                <span class="fact-label">Fact models</span>
+                            </div>
 
-</h3>
+                            <div class="fact">
+                                <span class="fact-number">5</span>
+                                <span class="fact-label">Reporting models</span>
+                            </div>
 
-<p class="description">
+                        </div>
 
-Autonomous ecommerce intelligence platform that analyzes
-stores, competitors and generates AI-powered optimization
-strategies using web intelligence and structured AI analysis.
+                    </div>
 
-</p>
 
-<!-- IMAGE CAROUSEL -->
+                    <div class="project-bottom">
 
-<div class="screenshot-wrapper">
+                        <h4>Technologies used</h4>
 
-<button class="carousel-btn prev"
-onclick="moveSlide(-1)">
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>PySpark</span>
+                            <span>PyArrow</span>
+                            <span>Parquet</span>
+                            <span>Google Cloud Storage</span>
+                            <span>BigQuery</span>
+                            <span>dbt</span>
+                            <span>Kestra</span>
+                            <span>Docker</span>
+                            <span>Streamlit</span>
+                        </div>
 
-❮
+                    </div>
 
-</button>
+                </article>
 
-<div class="screenshot-carousel" id="storepulseCarousel">
+            </div>
+        </section>
 
-<div class="screenshot-slide">
-<img
-src="assets/screenshots/storepulse1.png"
-alt="StorePulse Dashboard">
-</div>
 
-<div class="screenshot-slide">
-<img
-src="assets/screenshots/storepulse2.png"
-alt="StorePulse AI Analysis">
-</div>
+        <!-- ARCHITECTURE -->
 
-<div class="screenshot-slide">
-<img
-src="assets/screenshots/storepulse3.png"
-alt="StorePulse Report">
-</div>
+        <section class="section" id="architecture">
+            <div class="container">
 
-<div class="screenshot-slide">
-<img
-src="assets/screenshots/storepulse4.png"
-alt="StorePulse Report">
-</div>
+                <div class="section-heading">
 
-<div class="screenshot-slide">
-<img
-src="assets/screenshots/storepulse5.png"
-alt="StorePulse Report">
-</div>
+                    <p class="section-kicker">Platform architecture</p>
 
-<div class="screenshot-slide">
-<img
-src="assets/screenshots/storepulse6.png"
-alt="StorePulse Report">
-</div>
+                    <h2>
+                        From source data to analytics
+                    </h2>
 
-</div>
+                    <p class="section-intro">
+                        The pipeline separates ingestion, storage, warehouse transformations
+                        and reporting. Kestra coordinates the dependent workflow steps.
+                    </p>
 
-<button class="carousel-btn next"
-onclick="moveSlide(1)">
+                </div>
 
-❯
 
-</button>
+                <div class="pipeline" aria-label="Data pipeline stages">
 
-</div>
+                    <div class="pipeline-step">
+                        <span class="step-number">01 / SOURCE</span>
+                        <h3>Source datasets</h3>
+                        <p>Raw e-commerce CSV datasets.</p>
+                    </div>
 
-<p class="screenshot-caption">
+                    <div class="pipeline-step">
+                        <span class="step-number">02 / INGESTION</span>
+                        <h3>Python &amp; Parquet</h3>
+                        <p>Data conversion into columnar files.</p>
+                    </div>
 
-StorePulse AI Dashboard & Analysis Screens
+                    <div class="pipeline-step">
+                        <span class="step-number">03 / STORAGE</span>
+                        <h3>Cloud Storage</h3>
+                        <p>Parquet files stored in Google Cloud Storage.</p>
+                    </div>
 
-</p>
+                    <div class="pipeline-step">
+                        <span class="step-number">04 / WAREHOUSE</span>
+                        <h3>BigQuery</h3>
+                        <p>External tables provide access to source data.</p>
+                    </div>
 
-<!-- ARCHITECTURE IMAGE -->
+                    <div class="pipeline-step">
+                        <span class="step-number">05 / TRANSFORM</span>
+                        <h3>dbt models</h3>
+                        <p>Staging, dimensions, facts and reporting.</p>
+                    </div>
 
-<div class="diagram">
+                    <div class="pipeline-step">
+                        <span class="step-number">06 / CONSUME</span>
+                        <h3>Streamlit</h3>
+                        <p>Dashboard for business analysis.</p>
+                    </div>
 
-<img
-src="assets/diagrams/storepulse-arch.png"
-alt="StorePulse AI Architecture">
+                </div>
 
-<p>
 
-StorePulse AI System Architecture
+                <p class="orchestration-note">
+                    <strong>Orchestration:</strong>
+                    Kestra coordinates the workflow from CSV-to-Parquet conversion and cloud
+                    upload through external table creation and dbt transformations.
+                </p>
 
-</p>
+            </div>
+        </section>
 
-</div>
 
-<div class="grid">
+        <!-- DATA MODELING -->
 
-<div class="box">
+        <section class="section" id="modeling">
+            <div class="container">
 
-<h4>
+                <div class="section-heading">
 
-Business Problem
+                    <p class="section-kicker">Analytics engineering</p>
 
-</h4>
+                    <h2>
+                        A structured warehouse model
+                    </h2>
 
-<p>
+                    <p class="section-intro">
+                        The dbt project organizes transformations into clear layers,
+                        separating source preparation from business entities,
+                        transactional facts and reporting outputs.
+                    </p>
 
-Ecommerce companies need automated insights
-about SEO, UX, competitors and conversion issues.
+                </div>
 
-</p>
 
-</div>
+                <div class="model-grid">
 
-<div class="box">
+                    <article class="info-card">
 
-<h4>
+                        <span class="card-index">01 · STAGING</span>
 
-AI Solution
+                        <h3>Source preparation</h3>
 
-</h4>
+                        <p>
+                            Standardizes source fields, data types and naming conventions
+                            before downstream modeling.
+                        </p>
 
-<p>
+                        <div class="model-count">9 models</div>
 
-Autonomous analysis engine combining crawling,
-structured LLM outputs and business recommendations.
+                        <ul class="model-list">
+                            <li>stg_customers</li>
+                            <li>stg_geolocation</li>
+                            <li>stg_order_items</li>
+                            <li>stg_order_payments</li>
+                            <li>stg_order_reviews</li>
+                            <li>stg_orders</li>
+                            <li>stg_products</li>
+                            <li>stg_sellers</li>
+                            <li>stg_product_category_name_translation</li>
+                        </ul>
 
-</p>
+                    </article>
 
-</div>
 
-<div class="box">
+                    <article class="info-card">
 
-<h4>
+                        <span class="card-index">02 · DIMENSIONS</span>
 
-Engineering
+                        <h3>Business context</h3>
 
-</h4>
+                        <p>
+                            Reusable dimensions provide descriptive context
+                            for analytical queries and fact tables.
+                        </p>
 
-<p>
+                        <div class="model-count">5 dimensions</div>
 
-• Web crawling<br>
-• AI structured outputs<br>
-• Evidence-based generation<br>
-• Automated reporting
+                        <ul class="model-list">
+                            <li>dim_customers</li>
+                            <li>dim_date</li>
+                            <li>dim_payment_type</li>
+                            <li>dim_products</li>
+                            <li>dim_sellers</li>
+                        </ul>
 
-</p>
+                    </article>
 
-</div>
 
-</div>
+                    <article class="info-card">
 
-<div class="box stack">
+                        <span class="card-index">03 · FACTS</span>
 
-<h4>
+                        <h3>Business events</h3>
 
-Technology Stack
+                        <p>
+                            Transactional facts represent measurable activity
+                            with an explicit grain for aggregation.
+                        </p>
 
-</h4>
+                        <div class="model-count">4 fact models</div>
 
-<div class="tags">
+                        <ul class="model-list">
+                            <li>fct_order_items</li>
+                            <li>fct_orders</li>
+                            <li>fct_payments</li>
+                            <li>fct_reviews</li>
+                        </ul>
 
-<span>
-Python
-</span>
+                    </article>
 
-<span>
-FastAPI
-</span>
 
-<span>
-Next.js
-</span>
+                    <article class="info-card">
 
-<span>
-OpenAI
-</span>
+                        <span class="card-index">04 · REPORTING</span>
 
-<span>
-PostgreSQL
-</span>
+                        <h3>Business intelligence</h3>
 
-<span>
-Playwright
-</span>
+                        <p>
+                            Reporting models expose business-oriented datasets
+                            for KPIs and dashboard consumption.
+                        </p>
 
-<span>
-Docker
-</span>
+                        <div class="model-count">5 reporting models</div>
 
-</div>
+                        <ul class="model-list">
+                            <li>rpt_customer_metrics</li>
+                            <li>rpt_customer_retention</li>
+                            <li>rpt_product_performance</li>
+                            <li>rpt_sales_by_category</li>
+                            <li>rpt_sales_daily</li>
+                        </ul>
 
-</div>
+                    </article>
 
-<div class="buttons">
+                </div>
 
-<a class="btn primary"
-href="https://github.com/viktor-ai-dev/storepulse-ai">
 
-GitHub
+                <div class="grain-grid" aria-label="Fact table grain">
 
-</a>
+                    <div class="grain-item">
+                        <strong>fct_order_items</strong>
+                        <span>One row per order item</span>
+                    </div>
 
-<a class="btn secondary"
-href="https://youtu.be/oG5C8ZYo7Ek">
+                    <div class="grain-item">
+                        <strong>fct_orders</strong>
+                        <span>One row per order</span>
+                    </div>
 
-Live Demo
+                    <div class="grain-item">
+                        <strong>fct_payments</strong>
+                        <span>One row per payment transaction</span>
+                    </div>
 
-</a>
+                    <div class="grain-item">
+                        <strong>fct_reviews</strong>
+                        <span>One row per customer review</span>
+                    </div>
 
-</div>
+                </div>
 
-</div>
+            </div>
+        </section>
 
-<!-- RAG -->
 
-<div class="case">
+        <!-- ENGINEERING PRACTICES -->
 
-<h3>
+        <section class="section" id="engineering">
+            <div class="container">
 
-AI Customer Support RAG
+                <div class="section-heading">
 
-</h3>
+                    <p class="section-kicker">Engineering practices</p>
 
-<p class="description">
+                    <h2>
+                        Built around reliable data
+                    </h2>
 
-Retrieval Augmented Generation platform providing
-accurate AI-powered customer support using document
-retrieval, embeddings, vector search and grounded
-LLM responses.
+                    <p class="section-intro">
+                        The project emphasizes maintainable transformations, validation
+                        and clear separation between warehouse logic and reporting.
+                    </p>
 
-</p>
+                </div>
 
-<div class="diagram screenshot-preview">
 
-<img
-src="assets/screenshots/rag-dashboard.png"
-alt="AI Customer Support RAG Application">
+                <div class="principle-grid">
 
-<p>
+                    <article class="info-card">
+                        <span class="card-index">01</span>
+                        <h3>Data quality</h3>
+                        <p>
+                            dbt tests cover uniqueness, required fields and relationships
+                            across the analytical models.
+                        </p>
+                    </article>
 
-AI Customer Support RAG Application
+                    <article class="info-card">
+                        <span class="card-index">02</span>
+                        <h3>Model integrity</h3>
+                        <p>
+                            Fact-to-dimension relationships and table grain are defined
+                            to support consistent analysis.
+                        </p>
+                    </article>
 
-</p>
+                    <article class="info-card">
+                        <span class="card-index">03</span>
+                        <h3>Metric validation</h3>
+                        <p>
+                            Revenue and order metrics are reconciled between fact models
+                            and reporting outputs.
+                        </p>
+                    </article>
 
-</div>
+                    <article class="info-card">
+                        <span class="card-index">04</span>
+                        <h3>Workflow orchestration</h3>
+                        <p>
+                            Kestra coordinates dependent pipeline stages instead of
+                            relying on disconnected manual steps.
+                        </p>
+                    </article>
 
-<div class="diagram">
+                </div>
 
-<img
-src="assets/diagrams/rag-arch.png"
-alt="RAG System Architecture">
+            </div>
+        </section>
 
-<p>
 
-Documents → Processing → Embeddings →
-Vector Database → Retriever → LLM → Response
+        <!-- TECHNICAL STACK -->
 
-</p>
+        <section class="section" id="stack">
+            <div class="container">
 
-</div>
+                <div class="section-heading">
 
-<div class="grid">
+                    <p class="section-kicker">Technical toolkit</p>
 
-<div class="box">
+                    <h2>
+                        Technologies I work with
+                    </h2>
 
-<h4>
+                    <p class="section-intro">
+                        A practical stack centered on data processing, cloud warehousing,
+                        transformation and orchestration.
+                    </p>
 
-Problem
+                </div>
 
-</h4>
 
-<p>
+                <div class="stack-grid">
 
-Support teams need fast and reliable answers
-from large documentation sources while
-reducing AI hallucinations.
+                    <article class="info-card stack-card">
+                        <h3>Data processing</h3>
+                        <p>
+                            <strong>Python</strong><br>
+                            SQL<br>
+                            PySpark<br>
+                            PyArrow<br>
+                            Parquet
+                        </p>
+                    </article>
 
-</p>
+                    <article class="info-card stack-card">
+                        <h3>Cloud &amp; warehousing</h3>
+                        <p>
+                            <strong>Google Cloud Storage</strong><br>
+                            BigQuery<br>
+                            Cloud-based data storage<br>
+                            Analytical SQL
+                        </p>
+                    </article>
 
-</div>
+                    <article class="info-card stack-card">
+                        <h3>Transformation &amp; orchestration</h3>
+                        <p>
+                            <strong>dbt</strong><br>
+                            Kestra<br>
+                            Dimensional modeling<br>
+                            Data quality testing
+                        </p>
+                    </article>
 
-<div class="box">
+                    <article class="info-card stack-card">
+                        <h3>Development tools</h3>
+                        <p>
+                            <strong>Docker</strong><br>
+                            Git &amp; GitHub<br>
+                            Jupyter<br>
+                            Streamlit
+                        </p>
+                    </article>
 
-<h4>
+                    <article class="info-card stack-card">
+                        <h3>Data modeling</h3>
+                        <p>
+                            <strong>Star schema</strong><br>
+                            Dimensions and facts<br>
+                            Fact table grain<br>
+                            Reporting models
+                        </p>
+                    </article>
 
-Solution
+                    <article class="info-card stack-card">
+                        <h3>Application layer</h3>
+                        <p>
+                            <strong>Streamlit dashboards</strong><br>
+                            Python applications<br>
+                            Business metrics<br>
+                            Data visualization
+                        </p>
+                    </article>
 
-</h4>
+                </div>
 
-<p>
+            </div>
+        </section>
 
-A RAG pipeline that retrieves relevant knowledge
-before generating answers using context-aware
-LLM responses.
 
-</p>
+        <!-- ABOUT -->
 
-</div>
+        <section class="section" id="about">
+            <div class="container">
 
-<div class="box">
+                <div class="section-heading">
 
-<h4>
+                    <p class="section-kicker">About</p>
 
-Engineering Highlights
+                    <h2>
+                        Computer science foundation. Data engineering focus.
+                    </h2>
 
-</h4>
+                </div>
 
-<p>
 
-✓ Document processing<br>
-✓ Semantic search<br>
-✓ Vector embeddings<br>
-✓ Retrieval pipeline<br>
-✓ Grounded AI responses
+                <div class="about-layout">
 
-</p>
+                    <article class="about-card">
 
-</div>
+                        <h3>Education</h3>
 
-</div>
+                        <p>
+                            <strong>
+                                Bachelor’s degree in Computer Science — Artificial Intelligence
+                            </strong>
+                            <br>
+                            Mälardalen University
+                        </p>
 
-<div class="box stack">
+                    </article>
 
-<h4>
 
-Technology Stack
+                    <article class="about-card">
 
-</h4>
+                        <h3>Current focus</h3>
 
-<div class="tags">
+                        <p>
+                            Developing practical skills in data engineering, cloud data
+                            platforms, SQL transformation workflows and analytics engineering.
+                            Interested in junior Data Engineer opportunities and
+                            data-focused collaborations.
+                        </p>
 
-<span>
-Python
-</span>
+                    </article>
 
-<span>
-FastAPI
-</span>
+                </div>
 
-<span>
-LangChain
-</span>
+            </div>
+        </section>
 
-<span>
-OpenAI
-</span>
 
-<span>
-ChromaDB
-</span>
+        <!-- CONTACT -->
 
-<span>
-Vector Search
-</span>
+        <section class="section" id="contact">
+            <div class="container">
 
-<span>
-Docker
-</span>
+                <div class="contact-panel">
 
-</div>
+                    <div>
 
-</div>
+                        <p class="section-kicker">Get in touch</p>
 
-<div class="buttons">
+                        <h2>
+                            Let’s build better data platforms.
+                        </h2>
 
-<a class="btn primary"
-href="https://github.com/viktor-ai-dev/ai-customer-support">
+                        <p>
+                            Open to junior Data Engineer opportunities
+                            and relevant collaborations.
+                        </p>
 
-GitHub
+                    </div>
 
-</a>
 
-<a class="btn secondary"
-href="https://youtu.be/P2UHLif6-C0">
+                    <div class="hero-actions">
 
-Live Demo
+                        <a class="button button-primary"
+                           href="mailto:viktor.sz.hire@gmail.com">
+                            Email me <span aria-hidden="true">↗</span>
+                        </a>
 
-</a>
+                        <a class="button button-secondary"
+                           href="https://github.com/viktor-ai-dev"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            GitHub <span aria-hidden="true">↗</span>
+                        </a>
 
-</div>
+                    </div>
 
-</div>
+                </div>
 
-</div>
+            </div>
+        </section>
 
-</section>
+    </main>
 
-<!-- DATA ENGINEERING -->
 
-<section class="section">
+    <!-- FOOTER -->
 
-<div class="container">
+    <footer>
+        <div class="container footer-inner">
 
-<h2 class="section-title">
+            <span>© 2026 Viktor Sarafraz</span>
 
-Data Engineering Systems
+            <span>
+                Data Engineering · Cloud Data Platforms · Analytics Engineering
+            </span>
 
-</h2>
-
-<p class="subtitle">
-
-Building reliable pipelines, analytics platforms
-and scalable data architectures.
-
-</p>
-
-<div class="grid">
-
-<div class="case">
-
-<h3>
-
-E-Commerce Customer Intelligence Platform
-
-</h3>
-
-<p class="description">
-
-End-to-end cloud data platform transforming raw
-e-commerce transactions into trusted, analytics-ready
-business intelligence. The platform combines automated
-ingestion, cloud storage, BigQuery, dbt, dimensional
-modeling, data quality testing, workflow orchestration
-and an interactive Streamlit dashboard.
-
-</p>
-
-<!-- ARCHITECTURE IMAGE -->
-
-<div class="diagram">
-
-<img
-src="assets/diagrams/ecom-de-arch.png"
-alt="E-Commerce Customer Intelligence Platform Architecture">
-
-<p>
-
-E-Commerce Customer Intelligence Platform Architecture
-
-</p>
-
-</div>
-
-<div class="metric-grid">
-
-<div class="metric-card">
-
-<div class="metric-number">
-9
-</div>
-
-<div class="metric-label">
-Staging Models
-</div>
-
-</div>
-
-<div class="metric-card">
-
-<div class="metric-number">
-5
-</div>
-
-<div class="metric-label">
-Dimensions
-</div>
-
-</div>
-
-<div class="metric-card">
-
-<div class="metric-number">
-4
-</div>
-
-<div class="metric-label">
-Fact Models
-</div>
-
-</div>
-
-<div class="metric-card">
-
-<div class="metric-number">
-5
-</div>
-
-<div class="metric-label">
-Reporting Models
-</div>
-
-</div>
-
-</div>
-
-<div class="box">
-
-<h4>
-
-Business Problem
-
-</h4>
-
-<p>
-
-Raw e-commerce transaction data is difficult to analyze
-directly and is distributed across multiple source datasets.
-The platform creates a reliable analytical foundation for
-revenue, product, customer and retention intelligence.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-
-End-to-End Pipeline
-
-</h4>
-
-<div class="pipeline-step">
-
-<strong>
-01 · Ingestion
-</strong>
-
-Raw CSV datasets are converted into Parquet for
-efficient analytical storage.
-
-</div>
-
-<div class="pipeline-step">
-
-<strong>
-02 · Cloud Storage
-</strong>
-
-Parquet datasets are uploaded to Google Cloud Storage.
-
-</div>
-
-<div class="pipeline-step">
-
-<strong>
-03 · Warehouse Ingestion
-</strong>
-
-BigQuery External Tables provide warehouse access
-to the cloud-hosted datasets.
-
-</div>
-
-<div class="pipeline-step">
-
-<strong>
-04 · Transformation
-</strong>
-
-dbt builds the analytical warehouse through staging,
-dimensional, fact and reporting models.
-
-</div>
-
-<div class="pipeline-step">
-
-<strong>
-05 · Orchestration
-</strong>
-
-Kestra coordinates dependent workflows across the
-data pipeline.
-
-</div>
-
-<div class="pipeline-step">
-
-<strong>
-06 · Analytics
-</strong>
-
-Business-ready reporting models are consumed by
-an interactive Streamlit dashboard.
-
-</div>
-
-</div>
-
-<div class="box stack">
-
-<h4>
-
-Technology Stack
-
-</h4>
-
-<div class="tags">
-
-<span>
-Python
-</span>
-
-<span>
-SQL
-</span>
-
-<span>
-PySpark
-</span>
-
-<span>
-PyArrow
-</span>
-
-<span>
-Parquet
-</span>
-
-<span>
-Google Cloud Storage
-</span>
-
-<span>
-BigQuery
-</span>
-
-<span>
-dbt
-</span>
-
-<span>
-Kestra
-</span>
-
-<span>
-Docker
-</span>
-
-<span>
-Streamlit
-</span>
-
-<span>
-Jupyter
-</span>
-
-</div>
-
-</div>
-
-<!-- DATA WAREHOUSE ARCHITECTURE -->
-
-<div class="box">
-
-<h4>
-
-Data Warehouse Architecture
-
-</h4>
-
-<p>
-
-A layered dbt warehouse separates source preparation,
-dimensional modeling and business-facing analytics.
-This provides clear model ownership, reusable business
-logic and a stable interface for downstream reporting.
-
-</p>
-
-<div class="diagram data-flow">
-
-<div class="flow-stage">
-
-<div class="flow-title">
-RAW DATA
-</div>
-
-<div class="flow-meta">
-CSV • Parquet • BigQuery External Tables
-</div>
-
-</div>
-
-<div class="arrow">
-↓
-</div>
-
-<div class="flow-stage">
-
-<div class="flow-title">
-STAGING
-</div>
-
-<div class="flow-meta">
-Standardization • Type Normalization • Source Cleaning
-</div>
-
-</div>
-
-<div class="arrow">
-↓
-</div>
-
-<div class="flow-stage">
-
-<div class="flow-title">
-DIMENSIONS + FACTS
-</div>
-
-<div class="flow-meta">
-Star Schema • Business Entities • Transactional Events
-</div>
-
-</div>
-
-<div class="arrow">
-↓
-</div>
-
-<div class="flow-stage">
-
-<div class="flow-title">
-REPORTING
-</div>
-
-<div class="flow-meta">
-Business Metrics • KPI Models • Dashboard-ready Data
-</div>
-
-</div>
-
-<div class="arrow">
-↓
-</div>
-
-<div class="flow-stage">
-
-<div class="flow-title">
-ANALYTICS
-</div>
-
-<div class="flow-meta">
-Streamlit Business Intelligence Dashboard
-</div>
-
-</div>
-
-</div>
-
-<div class="grid">
-
-<div class="box layer-card">
-
-<div class="layer-number">
-01 · Staging Layer
-</div>
-
-<h4>
-Source Preparation
-</h4>
-
-<p class="layer-purpose">
-
-Creates a clean and consistent interface to the source
-data. Raw fields are standardized, typed and prepared
-for downstream analytical models.
-
-</p>
-
-<p>
-
-<strong>9 Models</strong>
-
-</p>
-
-<div class="model-list">
-
-<code>stg_customers</code><br> <code>stg_geolocation</code><br> <code>stg_order_items</code><br> <code>stg_order_payments</code><br> <code>stg_order_reviews</code><br> <code>stg_orders</code><br> <code>stg_product_category_name_translation</code><br> <code>stg_products</code><br> <code>stg_sellers</code>
-
-</div>
-
-</div>
-
-<div class="box layer-card">
-
-<div class="layer-number">
-02 · Dimensional Layer
-</div>
-
-<h4>
-Business Context
-</h4>
-
-<p class="layer-purpose">
-
-Provides reusable business dimensions that give
-descriptive context to transactional facts and support
-consistent analytical joins.
-
-</p>
-
-<p>
-
-<strong>5 Dimensions</strong>
-
-</p>
-
-<div class="model-list">
-
-<code>dim_customers</code><br> <code>dim_date</code><br> <code>dim_payment_type</code><br> <code>dim_products</code><br> <code>dim_sellers</code>
-
-</div>
-
-</div>
-
-<div class="box layer-card">
-
-<div class="layer-number">
-03 · Fact Layer
-</div>
-
-<h4>
-Business Events
-</h4>
-
-<p class="layer-purpose">
-
-Captures measurable transactional and event-level
-activity with explicit table grain for reliable
-analytical aggregation.
-
-</p>
-
-<p>
-
-<strong>4 Fact Models</strong>
-
-</p>
-
-<div class="model-list">
-
-<code>fct_order_items</code><br> <code>fct_orders</code><br> <code>fct_payments</code><br> <code>fct_reviews</code>
-
-</div>
-
-</div>
-
-<div class="box layer-card">
-
-<div class="layer-number">
-04 · Reporting Layer
-</div>
-
-<h4>
-Business Intelligence
-</h4>
-
-<p class="layer-purpose">
-
-Transforms the dimensional warehouse into stable,
-business-oriented datasets optimized for KPIs,
-dashboard consumption and decision support.
-
-</p>
-
-<p>
-
-<strong>5 Reporting Models</strong>
-
-</p>
-
-<div class="model-list">
-
-<code>rpt_customer_metrics</code><br> <code>rpt_customer_retention</code><br> <code>rpt_product_performance</code><br> <code>rpt_sales_by_category</code><br> <code>rpt_sales_daily</code>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="grid">
-
-<div class="box">
-
-<h4>
-Fact Table Grain
-</h4>
-
-<p>
-
-<strong>fct_order_items</strong><br>
-1 row = 1 order item
-
-</p>
-
-<p>
-
-<strong>fct_orders</strong><br>
-1 row = 1 order
-
-</p>
-
-<p>
-
-<strong>fct_payments</strong><br>
-1 row = 1 payment transaction
-
-</p>
-
-<p>
-
-<strong>fct_reviews</strong><br>
-1 row = 1 customer review
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-Analytical Design
-</h4>
-
-<p>
-
-The dimensional model separates measurable business
-events from reusable business dimensions. Reporting
-models then expose stable metrics without requiring
-the dashboard to perform complex warehouse joins.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-Data Quality
-</h4>
-
-<p>
-
-dbt tests validate uniqueness, required fields and
-relationships across the analytical model. Business-level
-reconciliation validates metric consistency from facts
-through the reporting layer.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="architecture-note">
-
-<strong>
-Architecture principle:
-</strong>
-
-Raw source data is transformed into reusable analytical
-models once, while business reporting logic remains
-separated from the presentation layer.
-
-</div>
-
-</div>
-
-<!-- DATA QUALITY -->
-
-<div class="box">
-
-<h4>
-
-Data Quality & Validation
-
-</h4>
-
-<p>
-
-Data quality is treated as a first-class part of the
-platform rather than as a final validation step.
-
-</p>
-
-<div class="grid">
-
-<div class="box">
-
-<h4>
-Schema Integrity
-</h4>
-
-<p>
-
-Uniqueness and not-null tests protect critical identifiers
-and required analytical fields.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-Referential Integrity
-</h4>
-
-<p>
-
-Relationship tests validate fact-to-dimension mappings
-across the warehouse.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-Business Reconciliation
-</h4>
-
-<p>
-
-Revenue and order metrics are reconciled between the
-underlying facts and downstream reporting models to
-ensure aggregation consistency.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- BUSINESS INTELLIGENCE -->
-
-<div class="box">
-
-<h4>
-
-Business Intelligence
-
-</h4>
-
-<p>
-
-The reporting layer feeds an interactive Streamlit
-dashboard designed for executive-level visibility
-and exploratory business analysis.
-
-</p>
-
-<div class="grid">
-
-<div class="box">
-
-<h4>
-Sales Analytics
-</h4>
-
-<p>
-
-Revenue trends<br>
-Orders<br>
-Average Order Value<br>
-Revenue by Category
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-Product Analytics
-</h4>
-
-<p>
-
-Top Products<br>
-Product Revenue<br>
-Category Performance
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-Customer Intelligence
-</h4>
-
-<p>
-
-Customer Revenue<br>
-Repeat Customers<br>
-One-Time Customers<br>
-Repeat Purchase Rate<br>
-Customer Retention
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- ORCHESTRATION -->
-
-<div class="box">
-
-<h4>
-
-Pipeline Orchestration
-
-</h4>
-
-<p>
-
-Kestra coordinates the pipeline as a sequence of
-dependent workflows, separating ingestion, cloud
-storage, warehouse creation and dbt transformation.
-
-</p>
-
-<div class="highlight-box">
-
-<strong>
-Current workflow:
-</strong>
-
-<br><br>
-
-<code>csv_to_parquet</code>
-→ <code>upload_parquet</code>
-→ <code>create_ext_tables</code>
-→ <code>dbt_create_stg_tables</code>
-→ <code>dbt_create_marts</code>
-
-</div>
-
-<p>
-
-The final marts workflow builds the dimensional,
-fact and reporting layers consumed by the dashboard.
-
-</p>
-
-</div>
-
-<!-- ENGINEERING DECISIONS -->
-
-<div class="box">
-
-<h4>
-
-Key Engineering Decisions
-
-</h4>
-
-<div class="grid">
-
-<div class="box">
-
-<h4>
-Parquet
-</h4>
-
-<p>
-
-Columnar storage format selected for analytical efficiency
-and compact cloud storage.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-BigQuery
-</h4>
-
-<p>
-
-Serverless analytical warehouse providing scalable SQL
-analytics and native integration with GCS.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-dbt
-</h4>
-
-<p>
-
-Version-controlled, modular and testable transformation
-layer with explicit model dependencies.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-Kestra
-</h4>
-
-<p>
-
-Workflow orchestration layer responsible for execution
-order and cross-stage dependencies.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- PROJECT OUTCOMES -->
-
-<div class="box">
-
-<h4>
-
-Project Outcomes
-
-</h4>
-
-<p>
-
-The platform produces a complete analytical data
-environment rather than a collection of isolated scripts.
-
-</p>
-
-<div class="highlight-box">
-
-<strong>
-Data platform outcome:
-</strong>
-
-<br><br>
-
-Raw transactional data is transformed into trusted,
-tested and dashboard-ready business intelligence.
-
-</div>
-
-<div class="metric-grid">
-
-<div class="metric-card">
-
-<div class="metric-number">
-9
-</div>
-
-<div class="metric-label">
-Staging Models
-</div>
-
-</div>
-
-<div class="metric-card">
-
-<div class="metric-number">
-5
-</div>
-
-<div class="metric-label">
-Dimensions
-</div>
-
-</div>
-
-<div class="metric-card">
-
-<div class="metric-number">
-4
-</div>
-
-<div class="metric-label">
-Fact Models
-</div>
-
-</div>
-
-<div class="metric-card">
-
-<div class="metric-number">
-5
-</div>
-
-<div class="metric-label">
-Reporting Models
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="project-link-row">
-
-<a class="btn primary"
-href="https://github.com/viktor-ai-dev/ecommerce-customer-intelligence-platform">
-
-GitHub Repository
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- ENGINEERING APPROACH -->
-
-<section class="section">
-
-<div class="container">
-
-<h2 class="section-title">
-
-Engineering Approach
-
-</h2>
-
-<p class="subtitle">
-
-How I design reliable AI systems and scalable data platforms.
-
-</p>
-
-<div class="case">
-
-<h3>
-
-Production AI System Lifecycle
-
-</h3>
-
-<div class="diagram">
-
-<img
-src="assets/diagrams/ai-system-lifecycle.png"
-alt="AI System Lifecycle">
-
-<p>
-
-Data Sources → Processing → AI Layer → Application → Monitoring
-
-</p>
-
-</div>
-
-<div class="grid">
-
-<div class="box">
-
-<h4>
-
-Reliable AI Systems
-
-</h4>
-
-<p>
-
-Structured outputs, validation schemas,
-retrieval pipelines and evidence-based
-generation to reduce hallucinations.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-
-Data Driven Architecture
-
-</h4>
-
-<p>
-
-Building pipelines that transform raw
-information into reliable business intelligence.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-
-Production Engineering
-
-</h4>
-
-<p>
-
-API design, databases, containers,
-deployment workflows and scalable systems.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- SYSTEM ARCHITECTURE -->
-
-<section class="section">
-
-<div class="container">
-
-<h2 class="section-title">
-
-System Architecture
-
-</h2>
-
-<p class="subtitle">
-
-Examples of how AI and data engineering components
-connect in production environments.
-
-</p>
-
-<div class="case">
-
-<div class="diagram">
-
-<img
-src="assets/diagrams/full-system-arch.png"
-alt="Full System Architecture">
-
-<p>
-
-Complete AI + Data Engineering Architecture
-
-</p>
-
-</div>
-
-<div class="grid">
-
-<div class="box">
-
-<h4>
-
-Data Layer
-
-</h4>
-
-<p>
-
-Databases<br>
-Data warehouses<br>
-Vector databases<br>
-Storage systems
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-
-AI Layer
-
-</h4>
-
-<p>
-
-LLMs<br>
-RAG pipelines<br>
-AI agents<br>
-Machine learning workflows
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-
-Application Layer
-
-</h4>
-
-<p>
-
-APIs<br>
-Dashboards<br>
-Automation tools<br>
-Business applications
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- TECHNICAL STACK -->
-
-<section class="section">
-
-<div class="container">
-
-<h2 class="section-title">
-
-Technical Stack
-
-</h2>
-
-<p class="subtitle">
-
-Tools and technologies used to build modern
-AI and data-driven applications.
-
-</p>
-
-<div class="grid">
-
-<div class="box">
-
-<h4>
-
-AI Engineering
-
-</h4>
-
-<p>
-
-OpenAI API<br>
-LangChain<br>
-RAG Systems<br>
-AI Agents<br>
-Prompt Engineering<br>
-Vector Databases
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-
-Data Engineering
-
-</h4>
-
-<p>
-
-Python<br>
-SQL<br>
-Spark<br>
-Parquet<br>
-Google Cloud Storage<br>
-BigQuery<br>
-dbt<br>
-Kestra<br>
-Docker<br>
-Streamlit<br>
-Dimensional Modeling
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-
-Backend Engineering
-
-</h4>
-
-<p>
-
-FastAPI<br>
-REST APIs<br>
-PostgreSQL<br>
-Docker<br>
-Authentication<br>
-Cloud Deployment
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-
-Frontend Engineering
-
-</h4>
-
-<p>
-
-React<br>
-Next.js<br>
-TypeScript<br>
-Tailwind CSS<br>
-Data Visualization
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- DEVELOPMENT PROCESS -->
-
-<section class="section">
-
-<div class="container">
-
-<h2 class="section-title">
-
-Development Process
-
-</h2>
-
-<p class="subtitle">
-
-From idea to production-ready intelligent systems.
-
-</p>
-
-<div class="grid">
-
-<div class="box">
-
-<h4>
-
-1. Data Collection
-
-</h4>
-
-<p>
-
-Gathering structured and unstructured
-data from reliable sources.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-
-2. Data Processing
-
-</h4>
-
-<p>
-
-Cleaning, transforming and preparing
-data pipelines.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-
-3. AI Engineering
-
-</h4>
-
-<p>
-
-Building RAG systems, AI agents
-and intelligent workflows.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-
-4. Production
-
-</h4>
-
-<p>
-
-Deploying scalable applications
-with monitoring and reliability.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- EDUCATION -->
-
-<section class="section">
-
-<div class="container">
-
-<h2 class="section-title">
-
-Education & Journey
-
-</h2>
-
-<div class="case">
-
-<h3>
-
-Bachelor of Computer Science - Artificial Intelligence
-
-</h3>
-
-<p class="description">
-
-Computer science foundation focused on
-artificial intelligence, software engineering,
-machine learning and intelligent systems.
-
-</p>
-
-<div class="tags">
-
-<span>
-Artificial Intelligence
-</span>
-
-<span>
-Machine Learning
-</span>
-
-<span>
-Software Engineering
-</span>
-
-<span>
-Algorithms
-</span>
-
-</div>
-
-</div>
-
-<div class="case">
-
-<h3>
-
-AI Engineer → Data Engineer Journey
-
-</h3>
-
-<div class="grid">
-
-<div class="box">
-
-<h4>
-
-2024
-
-</h4>
-
-<p>
-
-Computer science foundation,
-AI concepts and software engineering.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-
-2025
-
-</h4>
-
-<p>
-
-Production AI systems,
-RAG applications and SaaS platforms.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h4>
-
-2026
-
-</h4>
-
-<p>
-
-Data engineering,
-cloud architecture and scalable platforms.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section class="section" id="contact">
-
-<div class="container">
-
-<div class="case contact">
-
-<h2>
-
-Let's Build Intelligent Systems
-
-</h2>
-
-<p class="description">
-
-Open for AI Engineer, Data Engineer roles,
-internships and collaborations.
-
-</p>
-
-<div class="buttons">
-
-<a class="btn primary"
-href="mailto:viktor.sz.hire@gmail.com">
-
-Email Me
-
-</a>
-
-<a class="btn secondary"
-href="https://github.com/viktor-ai-dev">
-
-GitHub
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<script>
-
-let currentSlide = 0;
-
-function moveSlide(direction){
-
-const carousel =
-document.getElementById(
-"storepulseCarousel"
-);
-
-const slides =
-document.querySelectorAll(
-"#storepulseCarousel .screenshot-slide"
-);
-
-currentSlide += direction;
-
-if(currentSlide < 0){
-
-currentSlide =
-slides.length - 1;
-
-}
-
-if(currentSlide >= slides.length){
-
-currentSlide = 0;
-
-}
-
-carousel.scrollTo({
-
-left:
-carousel.clientWidth * currentSlide,
-
-behavior:"smooth"
-
-});
-
-}
-
-</script>
+        </div>
+    </footer>
 
 </body>
-
 </html>
